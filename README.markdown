@@ -9,6 +9,16 @@ And example of this is /usr/share/backgrounds/cosmos/background-1.xml.
 This project is my first Scala XML experience, so don't expect anything mayor.
 There are already multiple tools that do this, but as I'm testing out Scala, this seemed like a good project to try.
 
+Requirements
+------------
+* gconf-tool: currently used to set the background using Runtime.getRuntime.exec
+
+
+Usage example
+-------------
+sbt "run a.svg b.svg c.svg"
+
+
 License
 -------
 

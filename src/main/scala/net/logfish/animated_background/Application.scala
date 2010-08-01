@@ -64,32 +64,29 @@ object Application {
         out close()
 
         //Inform GNOME
-        if(false)
-        {
-            val p = Runtime.getRuntime().exec(
-                List(
-                    "gconftool-2",
-                    "--type", "string", 
-                    "--set", "/desktop/gnome/background/picture_filename",
-                    xmlBackgroundFile.getAbsolutePath
-                    ).toArray
-                )
-            p.waitFor
-            if(p.exitValue > 0)
-                println("gconftool subprocess exited with an error status (%i)\n", p.exitValue)
-            //Set zoom option. This should be part of the XML (I think) but I'm not sure how yet.
-            val ap = Runtime.getRuntime().exec(
-                List(
-                    "gconftool-2",
-                    "--type", "string", 
-                    "--set", "/desktop/gnome/background/picture_options",
-                    "zoom"
-                    ).toArray
-                )
-            ap.waitFor
-            if(ap.exitValue > 0)
-                println("gconftool subprocess exited with an error status (%i)\n", ap.exitValue)
-        }
+        val p = Runtime.getRuntime().exec(
+            List(
+                "gconftool-2",
+                "--type", "string", 
+                "--set", "/desktop/gnome/background/picture_filename",
+                xmlBackgroundFile.getAbsolutePath
+                ).toArray
+            )
+        p.waitFor
+        if(p.exitValue > 0)
+            println("gconftool subprocess exited with an error status (%i)\n", p.exitValue)
+        //Set zoom option. This should be part of the XML (I think) but I'm not sure how yet.
+        val ap = Runtime.getRuntime().exec(
+            List(
+                "gconftool-2",
+                "--type", "string", 
+                "--set", "/desktop/gnome/background/picture_options",
+                "zoom"
+                ).toArray
+            )
+        ap.waitFor
+        if(ap.exitValue > 0)
+            println("gconftool subprocess exited with an error status (%i)\n", ap.exitValue)
         System.exit(0)
     }
 }
