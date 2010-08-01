@@ -1,8 +1,0 @@
-Tool to create animatable background for gnome (with transitions)
-using the background-xml values.
-
-
-see /usr/share/backgrounds/cosmos/background-1.xml
-and desktop/background in gconf
-
-There are already multiple tools that do this, but as I'm testing out Scala, this seemed like a good project to try.
