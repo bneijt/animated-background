@@ -33,7 +33,8 @@ object Application {
         val transitionDuration = 3
         val staticDuration = 2
         val imageNames = args
-        val images = imageNames map (new File(_)) filter(_ exists)
+        val (images, notFound) = imageNames map (new File(_)) partition(_ exists)
+        notFound foreach (printf("Could not find: %s\n", _))
         //Images is a list of File s which exist
         if( images.length < 1) {
             println("No images left after filtering out non-existing filenames")
