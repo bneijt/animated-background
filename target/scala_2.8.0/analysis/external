@@ -1,4 +1,0 @@
-#External Dependencies
-#Sun Aug 01 16:14:44 CEST 2010
-/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar=src/main/scala/net/logfish/animated-background-builder/Application.scala
-/home/bram/program/animated-background/project/boot/scala-2.8.0/lib/scala-library.jar=src/main/scala/net/logfish/animated-background-builder/Application.scala

@@ -1,8 +1,0 @@
-~run
-run hello
-~ run hello.jpg other.png third.png
-~run background.xml image1.png image2.png
-~ run
-run hello
-~run hello1 hello2
-run a b c
