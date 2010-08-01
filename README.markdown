@@ -12,6 +12,5 @@ There are already multiple tools that do this, but as I'm testing out Scala, thi
 
 See also
 --------
-http://gnome-look.org/content/show.php/XML+animated+background+creator?content=118074
-http://gtk-apps.org/content/show.php/XML+slideshow+creator?content=119728
-https://help.ubuntu.com/community/ScreensaverAsWallpaper (Other approach to the same kind of thing)
+[http://gnome-look.org/content/show.php/XML+animated+background+creator?content=118074](http://gnome-look.org/content/show.php/XML+animated+background+creator?content=118074)
+[http://gtk-apps.org/content/show.php/XML+slideshow+creator?content=119728](http://gtk-apps.org/content/show.php/XML+slideshow+creator?content=119728)
