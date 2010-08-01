@@ -5,3 +5,4 @@ run hello
 ~ run
 run hello
 ~run hello1 hello2
+run a b c
