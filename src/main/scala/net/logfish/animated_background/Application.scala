@@ -19,6 +19,7 @@ package net.logfish.animated_background_builder
 import scala.collection.mutable.ArrayOps
 import scala.xml.{XML, Elem}
 import java.io.{File, PrintWriter}
+import jargs.gnu.CmdLineParser
 
 object Application {
     def staticNodes(files: Array[File], staticDuration: Int) = {
