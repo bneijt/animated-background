@@ -59,7 +59,7 @@ object Application {
 
         //Write background XML to disk
         val xmlBackgroundFile = new File("background.xml")
-        val out = new PrintWriter(xmlBackgroundFile)
+        val out = new PrintWriter(xmlBackgroundFile, "utf-8")
         out write background.mkString
         out close()
 
