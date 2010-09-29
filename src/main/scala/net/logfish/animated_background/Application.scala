@@ -19,7 +19,7 @@ package net.logfish.animated_background_builder
 import scala.collection.mutable.ArrayOps
 import scala.xml.{XML, Elem}
 import java.io.{File, PrintWriter}
-import jargs.gnu.CmdLineParser
+import net.logfish.CommandLineParser
 
 object Application {
     def staticNodes(files: Array[File], staticDuration: Int) = {
@@ -31,6 +31,20 @@ object Application {
     def main(args: Array[String]) = {
         //Create an XML file containing every given image using 
         //TODO Create GUI :)
+        val parser = new CommandLineParser(args);
+        try {
+            parser.run();
+        }
+        catch {
+            case e: Exception => println(e)
+            /*
+            case e: CommandLineParser.OptionException => 
+                System.err.println(e.getMessage());
+                //parser.printUsage();
+                System.exit(1);
+            */    
+        }
+
         if(args.length < 1) {
             printf("Usage: program <image <image <image ... >>>\n");
             System.exit(1)
